@@ -1,0 +1,8 @@
+parameters:
+  db:
+    driver: pdo_mysql
+    host: localhost
+    dbname: dbtink
+    user: root
+    password: 123
+    charset: utf8

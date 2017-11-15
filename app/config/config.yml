@@ -1,0 +1,7 @@
+imports:
+  - { resource: "./parameters.yml" }
+
+account:
+  daily_transfer_limit: 10000
+  transfer_same_owner_service_charge: 0
+  transfer_other_owner_service_charge: 100

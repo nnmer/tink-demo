@@ -1,0 +1,35 @@
+{
+    "autoload": {
+        "psr-4": { "": "src/"}
+    },
+    "require": {
+        "silex/silex": "~2.0",
+        "symfony/debug": "^3.3",
+        "symfony/yaml": "^3.3",
+        "hello-motto/config-service-provider": "^1.0",
+        "doctrine/orm": "^2.5",
+        "symfony/console": "^3.3",
+        "dflydev/doctrine-orm-service-provider": "^2.0",
+        "symfony/validator": "^3.3",
+        "symfony/serializer": "^3.3",
+        "ramsey/uuid": "^3.7",
+        "guzzlehttp/guzzle": "^6.3"
+    },
+    "scripts": {
+        "post-install-cmd": "App\\Composer\\Script::install",
+        "post-update-cmd": "App\\Composer\\Script::install"
+    },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/nnmer/config-service-provider.git"
+        }
+    ],
+    "config": {
+        "bin-dir": "bin/"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^5.7",
+        "behat/behat": "^3.4"
+    }
+}

@@ -1,0 +1,136 @@
+{
+	"variables": [],
+	"info": {
+		"name": "Tink",
+		"_postman_id": "4305cb73-0036-d0b5-78d2-447d4a4ba437",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "/api/accounts",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": "http://tink.lo/api/accounts",
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "/api/accounts/open",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\": \"Anton\",\n\t\"identityId\": \"PD001122\"\n}"
+				},
+				"url": "http://tink.lo/api/accounts/open",
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "/api/accounts/{bankAccount}/close",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": "http://tink.lo/api/accounts/400931510685672/close",
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "/api/accounts/{bankAccount}/balance",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": "http://tink.lo/api/accounts/400931510685509/balance",
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "/api/accounts/{bankAccount}/withdraw/{amount}",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": "http://tink.lo/api/accounts/400931510694840/withdraw/55",
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "/api/accounts/{bankAccount}/deposit/{amount}",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": "http://tink.lo/api/accounts/400931510694840/deposit/45",
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "/api/accounts/transfer",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"fromAccount\": \"400931510694839\",\n\t\"toAccount\": \"400931510694840\",\n\t\"amount\": 37\n}"
+				},
+				"url": "http://tink.lo/api/accounts/transfer",
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
